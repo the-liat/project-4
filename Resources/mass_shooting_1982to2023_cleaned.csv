@@ -1,5 +1,5 @@
 case,date,year,month,city,state,fatalities,injured,total_victims,location_catg,type,age_of_shooter,race,latitude,longitude
-Nashville religious school shooting,2023-03-27,2023,March,Nashville, TN,6,1,6,School,Mass,28.0,Unknown,36.162663,-86.781601
+Nashville religious school shooting,2023-03-27,2023,March,Nashville, Tennessee,6,1,6,School,Mass,28.0,Unknown,36.162663,-86.781601
 Michigan State University shooting,2023-02-13,2023,February,East Lansing, Michigan,3,5,8,School,Mass,43.0,Black,42.74688,-84.483704
 Half Moon Bay spree shooting,2023-01-23,2023,January,Half Moon Bay, California,7,1,8,Workplace,Spree,67.0,Asian,37.463551,-122.42858899999999
 LA dance studio mass shooting,2023-01-21,2023,January,Monterey Park, California,11,10,21,Other,Mass,72.0,Asian,34.059818,-118.122803
