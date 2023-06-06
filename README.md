@@ -49,6 +49,15 @@ The random forest classifier achieved an accuracy score of 0.906, correctly pred
 
 The sequential neural network achieved an accuracy score of 0.898, correctly predicting deaths occurred `(1)` or did not occur `(0)` for about 89.8% of instances.
 
+
+![image](https://github.com/the-liat/project-4/assets/119654958/08242ca9-af8a-48f6-98b4-5f496f96aaee)
+
+![image (1)](https://github.com/the-liat/project-4/assets/119654958/8981242d-7d13-4d12-8875-a3176025535d)
+
+![image (2)](https://github.com/the-liat/project-4/assets/119654958/14ecee04-cb86-43da-b5b3-d181094baebe)
+
+
+
 ### Limitations:
 
 Missing Values: Dealing with missing values in the dataset (e.g., Hawaii, counties, and number of deaths) created gaps in the data. This can affect the model's ability to capture patterns and make accurate prediction. Strategies such as imputation or removal of missing values were employed to address this challenge.
