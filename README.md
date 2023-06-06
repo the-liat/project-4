@@ -17,17 +17,19 @@ The application was built using Streamlit. The user can interact with the app. H
 
 1. Install Streamlit by running the following command `pip install streamlit` in your terminal or command prompt.
 2. Install Pydrive by using the following command: `pip install pydrive`. 
-3. Run the app locally by navigating to the directory where `st_app.py` is saved. Use the following command: `streamlit run st_app.py`. This will start the Streamlit development server, and you'll see a URL (e.g., http://localhost:8501) where your app is running. Open the URL in your web browser to view and interact with your app.
+3. Run the app locally by navigating to the directory where `st_app.py` is saved. Use the following command: `streamlit run st_app.py`. This will start the Streamlit development server, and you'll see a URL (e.g., http://localhost:8501) where your app is running. Open the URL in your web browser to view and interact with the app.
 
 ## Methodology: 
 
-**The code with comments can be found in the Notebooks file: Gun_violence_analysis_GroupCopy01.ipynb & Mass_shootings_forecastARIMA.ipynb.** 
+**The code with comments can be found in the Notebooks file:** *Gun_violence_analysis_GroupCopy01.ipynb & Mass_shootings_forecastARIMA.ipynb.*
 
 We evaluated three models: random forest classifier, sequential neural network, and ARIMA. Among these models, only the random forest classifier was used for the app. The DataFrame used for both the random forest classifier and sequential neural network consists of 38 total columns, with 28 columns representing features. The dataset contains 3104 rows, corresponding to 3143 counties in the U.S., and the target variable is death by gun.
 
 The county features included in the dataset are unemployment rate, population, gun laws, number of chain restaurants, number of places of worship, poverty, education, crime, and race.
 
-For the random forest model, we constructed a binary classifier to predict whether deaths occur `(1)` or do not occur `(0)` in each county. The performance metrics and evaluation of this model can be found in the results section of this documentation. Based on the binary model, we calculated the probabilities for each county, specifically the probability of at least 14 deaths by gun occurring in a county per year
+For the random forest model, we trained the model using the prepared training data. Constructed a binary classifier to predict whether deaths occur `(1)` or do not occur `(0)` in each county. The performance metrics and evaluation of this model can be found in the results section of this documentation. Based on the binary model, we calculated the probabilities for each county, specifically the probability of at least 14 deaths by gun occurring in a county per year
+
+For the sequential neural network, we trained the model using the prepared training data. The neural network architecture was implemented using the Keras library. We fine-tuned and created a binary neural network model to predict whether deaths occurred `(1)` or did not occur `(0)` for a given county. The performance metrics and evaluation results of this model can be found in the results section of this documentation.
 
 ARIMA  
 
@@ -49,7 +51,12 @@ Lack of Continuity in the Date Timeline: The time series data used for predictin
 In conclusion, the ARIMA model not suitable for our dataset. The random forest and neural network models demonstrate similar performance in predicting gun violence/deaths based on the dataset. The accuracy, precision, recall, and F1-scores indicate that the models are effective in distinguishing between cases where deaths occurred and cases where deaths did not occur. The predictions can be used to identify areas with higher risk of gun violence deaths, allowing policymakers, law enforcement agencies, and community organizations to allocate resources effectively and implement targeted strategies to address the problem. For future work, factors like mental health resources, access to firearms, social programs, or community engagement initiatives can be considered. They may enhance the model's predictive power and provide a better understanding of gun violence dynamics. 
 
 ## References/Data Sources: 
-- Gun deaths by county (https://data.world/nkrishnaswami/gun-deaths-by-county)
+- State Firearm Law Database: State Firearm Laws, 1991-2019 (https://catalog.data.gov/dataset/state-firearm-law-database-state-firearm-laws-1991-2019-e2e9d)
+- Gun Violence Archive (https://www.gunviolencearchive.org/)
+- Gun Deaths by County (https://data.world/nkrishnaswami/gun-deaths-by-county)
+- Firearm regulations in the U.S. (https://www.kaggle.com/code/jonathanbouchet/firearm-regulations-in-the-u-s) 
+- Gun Violence, USA (https://www.kaggle.com/datasets/nidzsharma/us-mass-shootings-19822023) 
+- The Violence Project (https://www.theviolenceproject.org/)
 - Education (https://data.world/usda/county-level-data-sets)
 - Unemployment Rate (https://data.world/usda/county-level-data-sets)
 - Poverty (https://data.world/usda/county-level-data-sets)
