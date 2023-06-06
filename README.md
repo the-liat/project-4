@@ -1,7 +1,7 @@
 # Uncovering Hidden Patterns: Predictive Analytics for Gun Violence in the U.S
 
-# Table of Contents: 
-- Description
+## Table of Contents: 
+- Overview
 - Usage
 - Methodology
 - Results
@@ -9,9 +9,8 @@
 - Conclusion
 - References/Data Sources
 
-## Description: 
--	Objective: 
--	Explain the significance of the project: 
+## Overview: 
+The number of mass shootings in the US is increasing. This year alone, as of late May, the Gun Violence Archive (an online independent data collection and research group) has counted more than 260 mass shootings in the United States. The objective is to build a prediction model that assess the number deaths/incidents of gun violence in the U.S by county.
 
 ## Installation Instructions/Usage:
 -	Stream lit  
