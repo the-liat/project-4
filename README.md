@@ -60,6 +60,8 @@ An interactive map employing the Folium library, was used to plot the probabilit
 
 ![image (1)](https://github.com/the-liat/project-4/assets/119654958/8981242d-7d13-4d12-8875-a3176025535d)
 
+When clicking a county a tool tip appear with information on the county, as demonstrated below
+
 ![image (2)](https://github.com/the-liat/project-4/assets/119654958/14ecee04-cb86-43da-b5b3-d181094baebe)
 
 
