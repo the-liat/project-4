@@ -212,7 +212,7 @@ st.divider()
 
 # Setting up prediction dataframe for interactive app
 #-----------------------------------------------------------------------------------
-#@st.cache_data(persist=None)
+@st.cache_data(persist=None)
 def create_prediction_df(counties_gvd):
     # Create a copy of counties_gvd
     predictions_df = counties_gvd.copy()
@@ -238,7 +238,7 @@ predictions_df = create_prediction_df(counties_gvd)
 
 # Setting up summary dataframe for interactive app (accuracy per state)
 #-----------------------------------------------------------------------------------
-#@st.cache_data(persist=None)
+@st.cache_data(persist=None)
 def create_summary_df(predictions_df):
     # group dataframe by state
     sum_df = predictions_df.groupby('state').sum().reset_index()
