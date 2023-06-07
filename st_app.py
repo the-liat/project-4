@@ -26,7 +26,7 @@ from pydrive.drive import GoogleDrive
 
 # Getting the combined dataset
 #-----------------------------------------------------------------------------------
-@st.cache_data
+@st.cache_data(persist=None)
 def get_data(url, name):
     # download the file from the Google Drive link
     gdown.download(url, name, quiet=False)
@@ -78,7 +78,7 @@ X.drop(['Unnamed: 0', 'county_Abbr', 'county_code', 'state', 'Area name', 'count
        axis=1, inplace=True)
 
 # Display names of features on app
-@st.cache_data
+@st.cache_data(persist=None)
 def show_features():
     col1, col2, col3 = st.columns(3)
     with col1:
@@ -126,7 +126,7 @@ st.divider()
 
 # Creating the model
 #-----------------------------------------------------------------------------------
-@st.cache_data
+@st.cache_data(persist=None)
 def rd_model(X, y):
     # Splitting into Train and Test sets
     X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=78)
@@ -184,7 +184,7 @@ st.dataframe(cm_df)
 st.divider()
 
 # Restructuring classification report to display correctly on the streamlit app
-@st.cache_data
+@st.cache_data(persist=None)
 def class_report(y_test, predictions):
     results = pd.DataFrame(classification_report(y_test, predictions, output_dict=True)).transpose()
     results['precision'] = results['precision'].astype(float).map("{:.3f}".format)
@@ -212,7 +212,7 @@ st.divider()
 
 # Setting up prediction dataframe for interactive app
 #-----------------------------------------------------------------------------------
-@st.cache_data
+@st.cache_data(persist=None)
 def create_prediction_df(counties_gvd):
     # Create a copy of counties_gvd
     predictions_df = counties_gvd.copy()
@@ -238,7 +238,7 @@ predictions_df = create_prediction_df(counties_gvd)
 
 # Setting up summary dataframe for interactive app (accuracy per state)
 #-----------------------------------------------------------------------------------
-@st.cache_data
+@st.cache_data(persist=None)
 def create_summary_df(predictions_df):
     # group dataframe by state
     sum_df = predictions_df.groupby('state').sum().reset_index()
