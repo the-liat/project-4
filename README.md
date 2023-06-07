@@ -31,7 +31,7 @@ Three models are evaluated: random forest classifier, sequential neural network,
 
 The county features included in the dataset are unemployment rate, population, gun laws, number of chain restaurants, number of places of worship, poverty, education, crime, and race.
 
-For the random forest model, the model is trained using the prepared training data. A binary classifier is constructed to predict whether deaths occur `(1)` or do not occur `(0)` in each county. The performance metrics and evaluation of this model can be found in the [results](#results) section of this documentation. Based on the binary model, the probabilities for each county are calculated, specifically the probability of at least 14 deaths by gun occurring in a county per year
+For the random forest model, the model is trained using the prepared training data. A binary classifier is constructed to predict whether gun deaths occur `(1)` or do not occur `(0)` in each county. The performance metrics and evaluation of this model can be found in the [results](#results) section of this documentation. Based on the binary model, the probabilities for each county are calculated, specifically the probability of at least 14 deaths by gun occurring in a county per year
 
 For the sequential neural network, the model is also trained using the prepared training data. The neural network architecture is implemented using the Keras library. A binary neural network model is fined-tuned and created to predict whether deaths occurred `(1)` or did not occur `(0)` for a given county. The performance metrics and evaluation of this model can be found in the [results](#results) section of this documentation.
 
