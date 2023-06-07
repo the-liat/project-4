@@ -66,16 +66,16 @@ When clicking a county a tool tip appear with information on the county, as demo
 
 
 
-### Limitations:
+## Limitations:
 
 Missing Values: Dealing with missing values in the dataset (e.g., Hawaii, counties, and number of deaths) created gaps in the data. This can affect the model's ability to capture patterns and make accurate prediction. Strategies such as imputation or removal of missing values were employed to address this challenge.
 
 Lack of Continuity in the Date Timeline: The time series data used for predicting gun violence had gaps or lacked continuity in the date timeline. This posed challenges for modeling with ARIMA, as it assumes a continuous and evenly spaced time series. The ARIMA model struggled to capture accurate time-dependent patterns and correlations in the presence of such gaps.
 
-### Conclusion: 
+## Conclusion: 
 In conclusion, the ARIMA model not suitable for our dataset. The random forest and neural network models demonstrate similar performance in predicting gun violence/deaths based on the dataset. The accuracy, precision, recall, and F1-scores indicate that the models are effective in distinguishing between cases where deaths occurred and cases where deaths did not occur. The predictions can be used to identify areas with higher risk of gun violence deaths, allowing policymakers, law enforcement agencies, and community organizations to allocate resources effectively and implement targeted strategies to address the problem. For future work, factors like mental health resources, access to firearms, social programs, or community engagement initiatives can be considered. They may enhance the model's predictive power and provide a better understanding of gun violence dynamics. 
 
-### References: 
+## References: 
 - State Firearm Law Database: State Firearm Laws, 1991-2019 (https://catalog.data.gov/dataset/state-firearm-law-database-state-firearm-laws-1991-2019-e2e9d)
 - Gun Violence Archive (https://www.gunviolencearchive.org/)
 - Gun Deaths by County (https://data.world/nkrishnaswami/gun-deaths-by-county)
