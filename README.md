@@ -18,7 +18,7 @@ The number of mass shootings in the US is increasing. This year alone, as of lat
 The application was built using Streamlit. The user can interact with the app. Here are the steps to launching the app using Streamlit:
 
 1. Install Streamlit by running the following command `pip install streamlit` in your terminal or command prompt.
-2. On a MAC you also need to install Pydrive by using the following command: `pip install pydrive`. 
+2. Install Pydrive by using the following command: `pip install pydrive`. 
 3. Run the app locally by navigating to the directory where `st_app.py` is saved. Use the following command: `streamlit run st_app.py`. This will start the Streamlit development server, and you'll see a URL (e.g., http://localhost:8501) where your app is running. Open the URL in your web browser to view and interact with the app.
 
 ## Methodology: 
