@@ -40,7 +40,7 @@ For the sequential neural network, the model is also trained using the prepared 
 ### ARIMA model
 The ARIMA was employed in an effort to make forecasts on mass shooting incidents in the usa over the year. Given limitations with the data, specifically a) not enough observations (the the model requires a minimum of 60) and b) discontinuity (events do not occur on a consistent timetable that is required for the model), a decision was made to asses the available data in different ways.
 
-![image](https://github.com/the-liat/project-4/assets/8871346/6192f61c-d310-4bf7-8c2a-ac51f6a37197)
+![image](https://github.com/the-liat/project-4/blob/main/Images/Prediction%20&%20Forecast.png?raw=true)
 
 ### Random Forest Classifier 
 <img width="387" alt="image" src="https://github.com/the-liat/project-4/assets/119654958/29eb92f1-f286-48c9-bee7-21cc9a7f1a8e">
