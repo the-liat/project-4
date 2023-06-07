@@ -11,17 +11,17 @@
 - [Conclusion](#conclusion)
 - [References](#references)
 
-### Overview: 
+## Overview: 
 The number of mass shootings in the US is increasing. This year alone, as of late May, the Gun Violence Archive (an online independent data collection and research group) has counted more than 260 mass shootings in the United States. The objective is to build a prediction model that assess the number deaths/incidents of gun violence in the U.S by county.
 
-### Usage:
+## Usage:
 The application was built using Streamlit. The user can interact with the app. Here are the steps to launching the app using Streamlit:
 
 1. Install Streamlit by running the following command `pip install streamlit` in your terminal or command prompt.
 2. On a MAC you also need to install Pydrive by using the following command: `pip install pydrive`. 
 3. Run the app locally by navigating to the directory where `st_app.py` is saved. Use the following command: `streamlit run st_app.py`. This will start the Streamlit development server, and you'll see a URL (e.g., http://localhost:8501) where your app is running. Open the URL in your web browser to view and interact with the app.
 
-### Methodology: 
+## Methodology: 
 
  **The code with comments can be found in the Notebooks file:** *Gun_violence_analysis_GroupCopy01.ipynb & Mass_shootings_forecastARIMA.ipynb.*
 
@@ -35,9 +35,12 @@ For the random forest model, the model is trained using the prepared training da
 
 For the sequential neural network, the model is also trained using the prepared training data. The neural network architecture is implemented using the Keras library. A binary neural network model is fined-tuned and created to predict whether deaths occurred `(1)` or did not occur `(0)` for a given county. The performance metrics and evaluation of this model can be found in the [results](#results) section of this documentation.
 
-ARIMA  
+## Results: 
 
-### Results: 
+### ARIMA model
+The ARIMA was employed in an effort to make forecasts on mass shooting incidents in the usa over the year. Given limitations with the data, specifically a) not enough observations (the the model requires a minimum of 60) and b) discontinuity (events do not occur on a consistent timetable that is required for the model), a decision was made to asses the available data in different ways.
+
+![image](https://github.com/the-liat/project-4/assets/8871346/6192f61c-d310-4bf7-8c2a-ac51f6a37197)
 
 ### Random Forest Classifier 
 <img width="387" alt="image" src="https://github.com/the-liat/project-4/assets/119654958/29eb92f1-f286-48c9-bee7-21cc9a7f1a8e">
@@ -48,6 +51,11 @@ The random forest classifier achieved an accuracy score of 0.906, correctly pred
 <img width="406" alt="image" src="https://github.com/the-liat/project-4/assets/119654958/a4aa6121-0017-4782-b22a-b2f9e070cbeb">
 
 The sequential neural network achieved an accuracy score of 0.898, correctly predicting deaths occurred `(1)` or did not occur `(0)` for about 89.8% of instances.
+
+Both of these model results in reletavle similar accuracy. Precision, recall and f1-scores were also similar and in the 90% range dimming the models appropriate for predicting gun deaths in usa counties with good accuracy.
+
+
+
 
 
 ![image](https://github.com/the-liat/project-4/assets/119654958/08242ca9-af8a-48f6-98b4-5f496f96aaee)
