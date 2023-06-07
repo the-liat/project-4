@@ -3,6 +3,6 @@ pandas
 matplotlib
 seaborn 
 gdown
-sklearn
+scikit-learn
 numpy
 pydrive
