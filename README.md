@@ -54,9 +54,7 @@ The sequential neural network achieved an accuracy score of 0.898, correctly pre
 
 Both of these model results in reletavle similar accuracy. Precision, recall and f1-scores were also similar and in the 90% range dimming the models appropriate for predicting gun deaths in usa counties with good accuracy.
 
-
-
-
+An interactive map employing the Folium library, was used to plot the probabilities of gun death in the different counties. 
 
 ![image](https://github.com/the-liat/project-4/assets/119654958/08242ca9-af8a-48f6-98b4-5f496f96aaee)
 
