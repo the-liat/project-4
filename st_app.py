@@ -210,6 +210,7 @@ st.write("### :red[Top Ten Important Features in Predicting Death in Counties]")
 fig, ax = plt.subplots()
 ax = importances_sorted[-10:].plot(kind='barh', color='blue', title= 'Features Importances: Top Ten', legend=False)
 plt.show()
+st.set_option('deprecation.showPyplotGlobalUse', False)
 st.pyplot()
 st.divider()
 
