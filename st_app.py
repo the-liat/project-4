@@ -7,7 +7,6 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import gdown
 import os
-import hvplot.pandas
 
 from sklearn.cluster import KMeans
 from sklearn.decomposition import PCA
@@ -16,10 +15,6 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import confusion_matrix, accuracy_score, classification_report
-
-import folium
-from folium.plugins import MarkerCluster
-from folium import FeatureGroup
 
 import numpy as np
 
